@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*-----GENERAL-----*/
+body {
+    background-color: #386641;
+}
+main{
+    background-color: #386641;
+    height: 86vh;
+    width: 100vw;
+}
+.logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    background-color: #00B74F;
+    background-image: url(./img/logo.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+input:focus {
+    outline: none;
+}
+input:valid {
+    border: 2px solid rgb(0, 255, 51);
+}
+input:invalid {
+    border: 2px solid #BC4749;
+}
+input:placeholder-shown {
+    border: 2px;
+}
+
+/*-----HEADER-----*/
+header{
+    height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav {
+    height: 12vh;
+    width: 84vw;
+    border-radius: 20px;
+    background-color: #A7C957;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 4%;
+}
+.iniciSesio {
+    height: 50px;
+    width: 180px;
+    border-radius: 18px;
+    background-color: #00893bd1;
+    padding-left: 2%;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+.iniciSesio a{
+    color: rgb(214, 251, 0);
+    text-decoration: none;
+}
+.iniciSesio a:hover{
+    color: rgb(139, 154, 55);
+    text-decoration: underline;
+    transition-duration: 0.3s;
+}
+
+
+/*-----HOME-----*/
+.home main{
+    display: grid;
+    grid-template-columns: 1.5fr 4fr 2.2fr 0.1fr;
+    column-gap: 50px;
+    align-content: center;
+}
+
+/*-----PUBLICACIONS D'ALTRES------*/
+.timeLine {
+    background-color: #6A994E;
+    height: 83vh;
+    border-radius: 30px;
+    box-shadow: 3px 3px 20px -5px black;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    align-items: center;
+    justify-items: center;
+}
+.timeLineTitol {
+    width: 90%;
+    padding: 15px;
+    padding-left: 20px;
+    border-bottom: solid black 1px;
+}
+.timeLineTitol h1 {
+    color: #F2E8CF;
+    font-size: 2rem;
+}
+.timeLinePosts {
+    width: 100%;
+    height: 95%;
+    gap: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.publicacio{
+    background-color: #386641;
+    width: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/*---PUBLICACIONS EXEMPLES-----*/
+#publicacioFoto {
+
+}
+.publicacioPerfil {
+    width: 90%;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.publicacioFotoPerfil {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+.publicacioImg{
+    width: 70%;
+    height: 300px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+.publicacioText {
+    width: 80%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.publicacioText p {
+    color: #F2E8CF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.publicacioButons {
+    width: 80%;
+}
+#like:checked ~ #likeAfter {
+    display: block;
+}
+#likeBefore {
+    color: #871e1f;
+}
+#likeAfter {
+    display: none;
+}
+#publicacio1 {
+    min-height: 400px;
+}
+/*------*/
+
+
+
+.barraLateral {
+    background-color: #6A994E;
+    height: 83vh;
+    border-radius: 30px;
+    box-shadow: 3px 3px 20px -5px black;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    justify-items: center;
+}
+.barraLateralPerfil {
+    width: 83%;
+    padding: 15px;
+    padding-left: 20px;
+    border-bottom: solid black 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*----Publicar posts----*/
+
+
+.barraLateralPerfil nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.publicarLabel {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: #BC4749;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+    color: #F2E8CF;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.publicarLabel:hover {
+    box-shadow: 1px 1px 5px black;
+    transition-duration: 0.15s;
+}
+.publicarLabel:active {
+    box-shadow: none;
+}
+.publicarCheck:checked ~ .divPublicar {
+    display: block;
+}
+.divPublicar {
+    display: none;
+    z-index: 1;
+    height: 82px;
+    width: 290px;
+    border-radius: 8px;
+    background-color: #386641;
+    position: relative;
+    top: 10px;
+    right: 28px;
+}
+.divPublicar form {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+.divPublicar textarea {
+    width: 90%;
+    background-color: #386641;
+    border: none;
+    color: #F2E8CF;
+    resize: none;
+    border-bottom: solid black 1px;
+}
+.divPublicar textarea:focus {
+    outline: none;
+}
+.divPublicar textarea::placeholder {
+    color: #f2e8cfa8;
+}
+.divPublicar span {
+    width: 90%;
+    height: 50%;
+    padding-left: 29px;
+    display: flex;
+    align-items: center;
+}
+.publicarCheck {
+    display: none;
+}
+
+
+/*-----------------*/
+
+
+.barraLateralPerfil a {
+    font-size: 30px;
+}
+.barraLateralPosts {
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+/*-----REGISTRE-----*/
+.registre main {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.registreForm {
+    height: 80vh;
+    width: 80vh;
+}
+.registreForm fieldset {
+    height: 100%;
+    width: 100%;
+    background-color: #6A994E;
+    border: solid #F2E8CF 2px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+}
+.registreForm legend {
+    margin: 0 auto;
+}
+.registreForm img{
+    height: 80px;
+    width: 80px;
+}
+.registreForm input{
+    height: 30px;
+    width: 60%;
+    border-radius: 12px;
+    padding-left: 5px;
+}
+.registreForm hr {
+    width: 80%;
+}
+.terminisCheck {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.terminisCheck input {
+    width: 15px;
+    border: none;
+}
+.registreForm button {
+    height: 50px;
+    width: 150px;
+    border-radius: 16px;
+    background-color: #BC4749;
+    border: 1px solid #871e1f;
+    box-shadow: 2px 3px 5px black;
+    cursor: pointer;
+}
+.registreForm button:hover {
+    box-shadow: 1px 1px 5px black;
+    transition-duration: 0.15s;
+}
+.registreForm button:active {
+    box-shadow: none;
+}
+.registreForm a{
+    color: rgb(214, 251, 0);
+    text-decoration: none;
+}
+.registreForm a:hover{
+    color: rgb(209, 229, 97);
+    text-decoration: underline;
+    transition-duration: 0.3s;
+}
+
+
+/*-----LOGIN-----*/
+
+.login main {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.loginForm {
+    height: 60vh;
+    width: 60vh;
+}
+.login fieldset {
+    height: 100%;
+    width: 100%;
+    background-color: #6A994E;
+    border: solid #F2E8CF 2px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+}
+.loginForm legend {
+    margin: 0 auto;
+}
+.loginForm img{
+    height: 80px;
+    width: 80px;
+}
+.loginForm input{
+    height: 40px;
+    width: 70%;
+    border-radius: 12px;
+    padding-left: 5px;
+}
+#loginEmail {
+    margin-top: 35px;
+}
+#loginContra {
+    margin-bottom: 35px;
+}
+.loginForm button {
+    height: 50px;
+    width: 150px;
+    border-radius: 16px;
+    background-color: #BC4749;
+    border: 1px solid #871e1f;
+    box-shadow: 2px 3px 5px black;
+    cursor: pointer;
+}
+.loginForm button:hover {
+    box-shadow: 1px 1px 5px black;
+    transition-duration: 0.15s;
+}
+.loginForm button:active {
+    box-shadow: none;
+}
+.loginForm a{
+    color: rgb(214, 251, 0);
+    text-decoration: none;
+}
+.loginForm a:hover{
+    color: rgb(209, 229, 97);
+    text-decoration: underline;
+    transition-duration: 0.3s;
+}

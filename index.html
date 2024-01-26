@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
+    <link rel="icon" type="image/jpg" href="./css/img/logo.webp"/>
+</head>
+<body class="home">
+    <header>
+        <nav>
+            <a href="index.html">
+                <div class="logo">
+                
+                </div>
+            </a>
+            <div class="iniciSesio">
+                <p>
+                    <a href="login.html">Inicia sesió</a>
+                    <br>
+                    o 
+                    <br>
+                    <a href="registre.html">Enregistra't</a>
+                </p>
+            </div>
+        </nav>        
+    </header>
+    <main>
+        <div class="buit"></div>
+        <section class="timeLine">
+            <div class="timeLineTitol">
+                <h1>Publicacions</h1>
+            </div>
+            <div class="timeLinePosts">
+                <div class="publicacio" id="publicacioFoto">
+                    <div class="publicacioPerfil">
+                        <div class="publicacioFotoPerfil"></div>
+                        <p class="nom">Ànecs curiositats</p>
+                        <p class="nomUsuari">@anecs_curiositats</p>
+                    </div>
+                    <div class="publicacioImg">
+
+                    </div>
+                    <div class="publicacioText">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptate, tenetur necessitatibus illum aliquam voluptatibus beatae at eum distinctio ipsum soluta quidem commodi a, nobis itaque excepturi cum perferendis asperiores.</p>
+                    </div>
+                    <div class="publicacioButons">
+                        <input type="checkbox" name="like" id="like">
+                        <label for="like">
+                        <i class="fa-regular fa-heart" id="likeBefore"></i>
+                        <i class="fa-solid fa-heart" id="likeAfter"></i>
+                        </label> 
+                        
+                    </div>
+                </div>
+                <div class="publicacio" id="publicacioText">
+
+                </div>
+                <div class="publicacio" id="publicacio1">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="barraLateral">
+            <div class="barraLateralPerfil">
+                <span>
+                    <input type="checkbox" name="publicar" id="publicarCheck" class="publicarCheck">
+                    <label class="publicarLabel" for="publicarCheck">Publicar <i class="fa-solid fa-plus"></i></label>
+                    <div class="divPublicar">
+                        <form action="">
+                            <textarea name="textPublicació" id="textPublicació" placeholder="Escriu..."></textarea>
+                        </form>
+                        <span>
+                            <i class="fa-regular fa-image" style="color: #bc4e47;"></i>
+                        </span>
+                    </div>
+                </span>
+                
+
+                <a href="prefil.html"><i id="linkPerfil" class="fa-solid fa-circle-user" style="color: #bc4749;"></i></a>
+            </div>
+            <div class="barraLateralPosts">
+                
+            </div>
+        </section>
+        <div class="buit"></div>
+    </main>
+    
+</body>
+</html>
